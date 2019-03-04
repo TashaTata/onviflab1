@@ -1,0 +1,15 @@
+cam1 = Camera ('192.168.15.42', 80, 'tyacysheva', 'TthmpqUoAGKO')
+
+cam1.get_debug_info()
+
+cam1.get_ptz_position()
+
+cam1.move_absolute(1, 1, 0)
+
+cam1.get_focus_options()
+
+cam1.change_focus_continuous(0.5, 1)
+
+cam = Camera('192.168.15.55', 8999, 'tyacysheva', 'TthmpqUoAGKO')
+
+cam.move_continuous_custom(-2, 1, 1, 2, 0.5, 1)
